@@ -1,0 +1,968 @@
+@font-face{ font-family:Oswald;
+    src:url(../recursos/Oswald-Light.ttf);
+    font-style:light;} /*Con estas propiedades, estoy enlazando una fuente que tengo en local a mi css, 
+    aunque en este caso, no la he utilizado*/
+
+@font-face{ font-family:Oswald;src:url(../recursos/Oswald-Bold.ttf);font-style:bold;}
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 490px) {
+body{margin:0;}
+
+
+
+
+
+/*No me detendré a explicarlas propiedades de este menú porque son las mismas que en el resto de las 
+páginas quie ya he explicado*/
+
+
+
+
+header{
+width: 100%;
+
+height: 5em;
+display: flex;
+z-index:100;
+
+}
+
+.logotipo{
+width: 15%;
+margin:10px;}
+
+
+
+
+#menuescritorio{
+display:none;}
+
+
+
+#hamburguesa{
+
+position: absolute;
+top:3%;
+right:3%;
+background-color: transparent;
+border-style: none;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight:100;
+font-size:50px;
+color:rgb(0, 0, 0)
+
+
+}
+
+
+
+
+#menu{
+background-color: aliceblue;
+font-family: "Poppins", sans-serif;
+position: absolute;
+z-index: 100;
+top:0%;
+width:100%;
+height: 50em;
+color: black;
+display: flex;
+flex-direction: center;
+align-items: center;
+justify-content: center;
+margin-left: 0;
+display:none;
+
+
+}
+
+
+
+
+
+#menu li{
+margin-top:20px;
+font-size: 20px;
+
+
+
+}
+
+
+a{
+text-decoration: none;
+color: black;}
+
+ul{
+list-style: none;
+padding:0;}
+
+#cierre{
+
+position: absolute;
+top:3%;
+right:3%;
+background-color: transparent;
+border-style: none;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight:100;
+font-size: 40px;
+color: rgb(177, 177, 177);}
+
+
+
+/*--------------------------------------seccion1---------------------------*/
+
+
+            
+.section1{width:100%;
+    height:1300px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    
+    .section1 img{width: 100%;
+        height: 1500px;
+    object-fit: cover;
+    }
+    
+    
+    .container{width: 90%;
+        height: 1200px;
+        background-color: white;
+        top:15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .titulo{height: 100px;
+    width: 85%;}
+    
+    h2{font-family: Poppins,sans-serif;
+    text-align: center;
+font-size: 2em;
+line-height: 40px;}
+    
+    .formulario{width: 100%;
+    height:550px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;}
+    
+    .nombreyapellidos{width: 100%;
+        height: 200px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+      
+    }
+    
+    .nombre, .telefono{
+        width: 90%;
+        height:80px;
+    
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(22, 81, 104);}
+    
+    
+    .telefono{
+      margin-top: 20px;
+    }
+    
+    .nombre::placeholder, .telefono::placeholder{
+        font-family: Poppins,sans-serif;
+        font-size: 2em;
+      
+    }
+    
+    .mailydireccion{width: 100%;
+        height: 200px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+      
+    }
+    
+    .mail, .direccion{
+        width: 90%;
+        height:80px;
+    
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(22, 81, 104);}
+    
+    
+        .direccion{
+            margin-top: 20px;
+         }
+    
+         .mail::placeholder, .direccion::placeholder{
+            font-family: Poppins,sans-serif;
+            font-size: 2em;
+        }
+    
+     .button{ width: 90%;
+    height: 90px;
+    font-size: 2em;
+    background-color:rgb(0, 134, 187);
+    font-family: Poppins, sans-serif;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;}
+    
+        
+    .informacion{ width:85%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    
+    .llamanos{text-align: center;
+    
+    width: 100%;}
+    
+   
+    p{width: 100%;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+  
+    line-height: 1.8em;}
+    
+    
+    
+    footer{
+        
+        width: 100%;
+        height: 400px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2%
+        
+     }
+    
+    .avisos{font-family:Poppins, sans-serif;
+        
+        color: white;
+        font-size: 1.2em;
+        line-height: 30px;
+        font-weight: 300;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––Estilos para escritorio–––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+@media only screen and (min-width:490px) and (max-width: 2200px) {
+
+
+
+
+
+
+.body{margin:0}
+
+
+
+
+/*header*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+body{margin:0;}
+
+
+
+header{
+width: 100%;
+height: 4em;
+background-color: white;
+display: flex;
+position: fixed;
+z-index: 100;
+}
+
+
+.logo{
+
+width:20%;
+margin-left:1%;}
+
+.logotipo{
+width: 15%;
+margin:10px;
+}
+
+.separadormenu{width:40%;}
+
+/*con las siguientes propiedades css voy a decirle al código 
+que me oculte el menú móvil cuando está en versión de escritorio*/
+
+#hamburguesa{display: none;}
+#menu{display:none;}
+#cierre{display:none;}
+
+/*aquí acabo, y le digo que ahora al código que me muestre el menú de escritorio
+con la propiedad disppay:block;*/
+
+#menuescritorio{
+display:block;}
+
+#menuescritorio ul{
+    display:flex;
+    color: rgb(0, 0, 0)!important;
+    font-family: "Poppins", sans-serif;
+    list-style:none;
+}
+
+    
+
+#menuescritorio li{
+       padding-left: 20%;
+       color: rgb(0, 0, 0);
+}
+
+a{
+text-decoration: none;
+color: rgb(0, 0, 0);}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 147, 192);}
+
+
+
+
+/*SECCION 1*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+
+
+/* SECCIÓN PRIMERA--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+.section1{width:100%;
+height:650px;
+background-color: brown;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.section1 img{width: 100%;
+    height: 650px;
+object-fit: cover;
+}
+
+
+.container{width: 60%;
+    height: 450px;
+    background-color: white;
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.titulo{height: 100px;
+width: 50%;}
+
+h2{font-family: Poppins,sans-serif;
+text-align: center;}
+
+.formulario{width: 100%;
+height:250px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 25px;}
+
+.nombreyapellidos{width: 60%;
+    height: 40px;
+    display: flex;
+flex-direction: row;
+  
+}
+
+.nombre, .telefono{
+    width: 47%;
+    height:40px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(22, 81, 104);}
+
+
+.telefono{
+   margin-left: 10px;
+}
+
+.nombre::placeholder, .telefono::placeholder{  /*Aquí estamos llamando al placholer del HTML para cambiarlo*/
+    font-family: Poppins,sans-serif;
+}
+
+.mailydireccion{width: 60%;
+    height: 40px;
+    display: flex;
+flex-direction: row;
+margin-top: 20px;
+  
+}
+
+.mail, .direccion{
+    width: 47%;
+    height:40px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(22, 81, 104);}
+
+
+    .direccion{
+        margin-left: 10px;
+     }
+
+     .mail::placeholder, .direccion::placeholder{
+        font-family: Poppins,sans-serif;
+    }
+
+ .button{ width: 20%;
+height: 50px;
+background-color:rgb(0, 134, 187);
+font-family: Poppins, sans-serif;
+color: white;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;}
+
+.button:hover{ width: 20%;
+    height: 50px;
+    background-color:rgb(7, 25, 51);
+    font-family: Poppins, sans-serif;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+.informacion{ width: 60%;
+height: 300px;
+display: flex;
+flex-direction: row;}
+
+.llamanos{text-align: left;
+
+width: 100%;}
+
+.linea{width: 3px;
+    margin-top: 15px;
+height: 50%;
+background-color: rgb(109, 109, 109);
+margin-left:20px;}
+
+p{width: 100%;
+font-family: Poppins, sans-serif;
+font-size: 0.8em;
+font-weight: 400;
+margin-left: 50px;
+line-height: 1.8em;}
+
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:3%
+    
+ }
+
+.avisos{font-family:Poppins, sans-serif;
+    
+    color: white;
+    font-size: 1em;
+    line-height: 30px;
+    font-weight: 200;
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––Estilos para tablet–––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+@media only screen and (min-width:490px) and (max-width: 900px) {
+
+
+
+
+
+
+.body{margin:0}
+
+
+
+
+/*header*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+body{margin:0;}
+
+
+
+header{
+width: 100%;
+height: 4em;
+background-color: white;
+display: flex;
+position: fixed;
+z-index: 100;
+}
+
+
+.logo{
+
+width:20%;
+margin-left:1%;}
+
+.logotipo{
+width: 15%;
+margin:10px;
+}
+
+.separadormenu{width:10%;}
+
+/*con las siguientes propiedades css voy a decirle al código 
+que me oculte el menú móvil cuando está en versión de escritorio*/
+
+#hamburguesa{display: none;}
+#menu{display:none;}
+#cierre{display:none;}
+
+/*aquí acabo, y le digo que ahora al código que me muestre el menú de escritorio
+con la propiedad disppay:block;*/
+
+#menuescritorio{
+display:block;}
+
+#menuescritorio ul{
+    display:flex;
+    color: rgb(0, 0, 0)!important;
+    font-family: "Poppins", sans-serif;
+    list-style:none;
+}
+
+    
+
+#menuescritorio li{
+       padding-left: 20%;
+       color: rgb(0, 0, 0);
+}
+
+a{
+text-decoration: none;
+color: rgb(0, 0, 0);}
+
+
+
+
+
+
+/*SECCION 1*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+
+
+/* SECCIÓN PRIMERA--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+
+
+.section1{width:100%;
+    height:650px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    
+    .section1 img{width: 100%;
+        height: 650px;
+    object-fit: cover;
+    }
+    
+    
+    .container{width: 60%;
+        height: 450px;
+        background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .titulo{height: 100px;
+    width: 70%;}
+    
+    h2{font-family: Poppins,sans-serif;
+    text-align: center;}
+    
+    .formulario{width: 100%;
+    height:250px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;}
+    
+    .nombreyapellidos{width: 80%;
+        height: 40px;
+        display: flex;
+    flex-direction: row;
+      
+    }
+    
+    .nombre, .telefono{
+        width: 47%;
+        height:40px;
+    
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(22, 81, 104);}
+    
+    
+    .telefono{
+       margin-left: 10px;
+    }
+    
+    .nombre::placeholder, .telefono::placeholder{
+        font-family: Poppins,sans-serif;
+    }
+    
+    .mailydireccion{width: 80%;
+        height: 40px;
+        display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+      
+    }
+    
+    .mail, .direccion{
+        width: 47%;
+        height:40px;
+    
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(22, 81, 104);}
+    
+    
+        .direccion{
+            margin-left: 10px;
+         }
+    
+         .mail::placeholder, .direccion::placeholder{
+            font-family: Poppins,sans-serif;
+        }
+    
+     .button{ width: 40%;
+    height: 50px;
+    background-color:rgb(0, 134, 187);
+    font-family: Poppins, sans-serif;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;}
+    
+    .button:hover{ width: 20%;
+        height: 50px;
+        background-color:rgb(7, 25, 51);
+        font-family: Poppins, sans-serif;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        
+    .informacion{ width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;}
+    
+    .llamanos{text-align: left;
+    
+    width: 100%;}
+    
+    .linea{width: 3px;
+        margin-top: 15px;
+    height: 70%;
+    background-color: rgb(109, 109, 109);
+    margin-left:20px;}
+    
+    p{width: 100%;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 50px;
+    line-height: 1.8em;}
+    
+    
+    
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:3%
+        
+     }
+    
+    .avisos{font-family:Poppins, sans-serif;
+        
+        color: white;
+        font-size: 1em;
+        line-height: 30px;
+        font-weight: 200;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

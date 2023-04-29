@@ -1,0 +1,406 @@
+
+@media only screen and (min-width:0px) and (max-width: 480px) { /*Código para dispositivos móviles*/
+
+body{
+ 
+    margin:0; /* Esta propiedad se la doy porque a veces el body por defecto me hace unos márgenes raros, así se lo quito*/
+    padding:0;
+    background-color:rgb(18, 21, 39); /*Esta propiedad sirve para darle color de fondo, en este caso azul oscuro*/
+    height: 40em;/*Aquí le damos el largo a nuestra web en dispositivos móviles*/
+    
+   
+}
+
+
+
+/*  */
+
+.container{
+
+    width: 100%; /*Nuestro contenedor tendrá un ancho que ocupe el 100% de toda la pantalla*/
+    height: 40em;
+    
+   /*Con las siguiente spropiedades le decimos al CSS que todo el contenido del .container nos lo centre
+    en una columna con todos los elementos centrados  */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  
+    
+  
+   
+}
+
+
+.preguntaprincipal{
+
+    width: 85%; /*Ahora queremos que este div, no ocupe todo el ancho de la pantalla, por eso le hemos dado un 85%*/
+    height: 40em;
+    /*Aquí hemos hecho algo parecido a lo de antes, centrando todos los elementos*/
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   
+    
+    
+}
+
+
+
+.cuestion{
+    width: 100%;/* del 83% de ancho que le hemos dado antes al div, aquí decimos que el width sea de ese 85%, un 100% (todo el ancho*/
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   
+            }
+
+
+#pregunta{
+
+    width: 78%;
+    background-color: rgb(18, 21, 39);
+    border-style: none; /*  Esta propiedad quita el borde a un div*/
+    height: 4em;
+    color: aliceblue;/* Con esta damos color a una tipografía */
+    font-family: Poppins, sans-serif; /*  Con esta seleccionamos la familia tipográfica*/
+    font-weight: 100;/* Con esta propiedad definimos el cuerpo de la tipografía */
+    font-size: 15px;/* Y con esta el tamaño */
+    box-shadow: 0 0 5px #00e5ff; /* Los inputs no tendrán borde, pero si una sombra aguamarina que sobre saldrá  */
+    flex-direction: column;
+    margin:0px;
+}
+
+
+
+
+#pregunta::placeholder{  /* El ::placeholder lo que hace es dar propiedades al atributo placeholder de un input en html */
+
+  color:rgb(0, 161, 201);
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+
+}
+
+
+
+#pregunta:focus{/* el :focus se refiere a cuando el ratón ha clickad en este input */
+
+    width: 78%;
+    background-color: rgb(18, 21, 39);
+    outline: none;
+    box-shadow: 0 0 5px #00e5ff;
+    height: 4em;
+    
+
+}
+
+#boton{
+
+    background-color: rgb(18, 21, 39);
+    border-style: none;
+    box-shadow: 0 0 5px #00e5ff;
+    color: rgb(0, 122, 152);
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+    width: 100%;
+     height: 3em;
+     
+}
+
+
+#boton:hover{ /* :hover se refiere al evento de cuando un ratón pasa por un elemento, en este caso se 
+    activan las siguientes propiedades*/
+
+    background-color: rgb(0, 122, 152);
+    border-style: none;
+    box-shadow: 0 0 0px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    font-size: 20px;;
+    width: 95%;
+     height: 3em;
+}
+
+
+a#enlace1{
+    margin-top:20px;
+    padding: 0;
+    width:79%;
+  
+ 
+    
+  }
+
+
+#enlace1{
+    width:92%;
+    height:3em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    margin-top: 1em;
+    text-decoration: none;
+    
+
+}
+
+#advertencia{
+    font-family: Poppins, sans-serif;
+    color: rgb(0, 122, 152);
+    size:9px;
+    font-weight: 200;
+    width:80%;
+
+}
+
+
+#sorry{         width: 80%;
+                color:rgb(255, 81, 0); /*  color rojo para señalar prohibición*/
+                font-family: Poppins, sans-serif;
+                font-weight: 200;
+                font-size: 10px;
+                display:none;}/*Este display: none hace que este div no se muestre hasta que se active desde JS  */
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*----------------------__________________---------ESCRITORIO----------_________________------------_______________________*/
+
+@media only screen and (min-width:490px) and (max-width: 2200px) { /* Con esta linea ajustamos las propiedades para escritorio */
+
+    
+
+
+
+
+
+    body{
+        margin:0;
+        padding:0;
+        
+
+
+       
+    }
+    
+    
+    
+
+    
+    
+    .container{
+
+        width: 100%;
+        height: 720px;
+        background-color:rgb(18, 21, 39);
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center; 
+    }
+    
+   
+    .preguntaprincipal{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin-left: 25%;
+      
+    
+    }
+
+
+    .cuestion{
+        width: 100%;
+        display: flex;
+
+        /*  Aquí no damosn propiedades como align-items, justify-content etc... porque simplemente queremos que los elementos 
+        se pongan en fila*/
+       
+        
+     }
+    
+    
+    #pregunta{
+    
+        width: 30%;
+        background-color: rgb(18, 21, 39);
+        border-style: none;
+       
+        color: aliceblue;
+        font-family: Poppins, sans-serif;
+      font-weight: 100;
+      font-size: 15px;
+      box-shadow: 0 0 5px #00e5ff;
+      
+      
+        
+    
+    }
+    
+    
+    #pregunta::placeholder{
+    
+      color:rgb(0, 161, 201);
+      font-family: Poppins, sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+    
+    }
+    
+    
+    
+    #pregunta:focus{
+    
+        width: 30%;
+        background-color: rgb(18, 21, 39);
+        outline: none;
+        box-shadow: 0 0 5px #00e5ff;
+        
+        
+    
+    }
+    
+    #boton{
+    
+        background-color: rgb(18, 21, 39);
+        border-style: none;
+        box-shadow: 0 0 5px #00e5ff;
+        color: rgb(0, 122, 152);
+        font-family: Poppins, sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+        
+        width: 40%;
+         height: 4em;
+         margin-left: 20px;
+         
+    }
+    
+    
+    #boton:hover{
+    
+        background-color: rgb(0, 122, 152);
+        border-style: none;
+        box-shadow: 0 0 0px;
+        color: rgb(255, 255, 255);
+        font-family: Poppins, sans-serif;
+        font-weight: 200;
+        font-size: 20px;;
+        width: 40%;
+         height: 4em;
+    }
+    
+    #enlace1{
+        width:40%;
+        height:4em;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+        text-decoration: none;
+        
+    }
+
+    a#enlace1{
+        margin:0;padding: 0;
+        width: 30%;
+      }
+    
+    #advertencia{
+        font-family: Poppins, sans-serif;
+        color: rgb(0, 122, 152);
+        size:10px;
+        font-weight: 200;
+        width:30%
+    
+    }
+    
+    
+    #sorry{         width: 80%;
+                    color:rgb(255, 81, 0);
+                    font-family: Poppins, sans-serif;
+                    font-weight: 200;
+                    font-size: 10px;
+                    display:none;}
+    
+    
+    .separador0{
+     height: 300px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

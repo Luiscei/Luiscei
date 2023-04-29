@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="css trips/trips.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Rutas</title>  
+</head>
+<body>
+    
+
+<!--Aquí el menú se queda igualmque como estaba en la HOME, con dos menus, uno que se mostrará en versión
+    móvil y otro que se mostrará en versión escritorio-------------->
+    
+        <header>
+            <div class ="logo">
+                <img class="logotipo" src="../recursos/diving-helmet.png">
+            </div>
+                <div class="separadormenu"></div>
+                    <button id="hamburguesa">=</button>
+                    <nav id="menuescritorio">
+                        <ul>
+                                 <li><a href="../page 1/rutas.html">Home</a></li>
+                                 <li><a href="../page 2 (trips)/trips.html">Rutas</a></li>
+                                 <li><a href="../page 3 (contacto)/contacto.html">Contacto</a></li>
+                         </ul>
+                    </nav>
+
+            <nav id="menu">
+                <button id="cierre">x</button>
+                <ul>
+                  <li><a href="../page 1/rutas.html">Home</a></li>
+                  <li><a href="../page 2 (trips)/trips.html">Rutas</a></li>
+                  <li><a href="../page 3 (contacto)/contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
+        
+        </header>
+  
+        
+     
+
+
+
+           
+
+  
+        <!--Aquí empieza la cabecera---------------------------------------------->
+
+        <div class="containersection1"><!--Esta sección constará de dos bloques: uno con los textos; y otro con una imagen de un
+        cascco de buceo antiguo-->
+
+            <div class="maintext"><!--Esteb es el bloque con los textos---->
+                <h1>Elige tu ruta y empieza la aventura</h1>
+                <a  class="mainbutton" href="../html.html">APÚNTATE</a> <!--Aquí va un call to action-->
+            </div>
+
+            <div class="mainpicture"><img src="css trips/dive-677990_1920.jpg"></div> <!--la imagen principal del casco de buzo-->
+         </div>
+
+
+
+         <!--aqui acaba la cabecera--------------------------------------------------->
+
+
+         <div class="containersection2"> <!--Esta sección va a ser un título, un texto y una tabla con imagenes-->
+
+            <div class ="secondarytext">
+
+                <h2>Rutas en Denia, Jávea y Moraira</h2>
+
+                    <p class="parrafo"> Nada mejor para descubir el mar que recorrer buceando, 
+                    las rutas de los antiguos pescadores de la Marina Alta. Explora grutas
+                    y acantilados más recónditos de esta costa ¿En cuál desatarás tu adrenalina?
+                    </p>
+            </div>
+
+            <div class="tablaescritorio"> <!--Esta tabla constará de una sola fila (tr) con tres columnas (td)
+            cada columna, tendrá en su interior una clumna que ocupe todo el ancho de la misma 
+        con un texto superpuesto-->
+
+                <table>
+                    <tr> <!--Aquí emìeza la fila-->
+                        <!--Y el código inferior es el que constituye cada columna con su interior-->
+                        <td class="inicio"><img class="javea" src="../page 2 (trips)/css trips/cueva-del-llop-mari-a-xabia-alacant-0-vista-panoramica.webp">
+                            <div class="xavea">
+                            <h3>JÁVEA</h3>
+                            <p class="subparrafo">Rutas programas para Abril</p>
+                            <a class="secondarybutton" href="../page 3 (contacto)/contacto.html"> RESERVAR</a>
+                        </div>
+                        </td>
+
+                        <td><img class="benitachell" src="../page 2 (trips)/css trips/ruta-senderismo-acantilados-benitatxell-cala-llebeig-8.jpg">
+                            <div class="benitatxell">
+                            <h3>BENITACHELL</h3>
+                            <p class="subparrafo">Rutas programas para Junio</p>
+                            <a class="secondarybutton" href="../page 3 (contacto)/contacto.html">RESERVAR</a>
+                        </div>
+                        </td>
+                        <td><img class="calpe" src="../page 2 (trips)/css trips/Penon_Ifach.jpg">
+                            <div class="calp">
+                            <h3>CALPE</h3>
+                            <p class="subparrafo">Rutas programas para Julio</p>
+                            <a class="secondarybutton" href="../page 3 (contacto)/contacto.html">RESERVAR</a>
+                        </div>
+
+                        </td>
+                    </tr>
+                </table>
+          
+            </div>
+
+            <!--La tabla de abajo es la que se activará con en la versión móvil, esta tabla, para mejorar su estructura en vertical
+            consta de tres filas (tr) cada una con una columna en su interior (td)-->
+
+            <div class="tablamovil">
+
+                <table>
+                    <tr>
+                        <td><img class="javea" src="../page 2 (trips)/css trips/cueva-del-llop-mari-a-xabia-alacant-0-vista-panoramica.webp">
+                            <div class="xavea">
+                            <h3>JÁVEA</h3>
+                            <p class="subparrafo">Rutas programas para Abril</p>
+                            <a class="secondarybutton" href="../page 3 (contacto)/contacto.html"> RESERVAR</a>
+                        </div>
+                        </td>
+                    </tr>
+                <tr> 
+                    <td><img class="benitachell" src="../page 2 (trips)/css trips/ruta-senderismo-acantilados-benitatxell-cala-llebeig-8.jpg">
+                        <div class="benitatxell">
+                        <h3>BENITACHELL</h3>
+                        <p class="subparrafo">Rutas programas para Junio</p>
+                        <a class="secondarybutton" href="../page 3 (contacto)/contacto.html">RESERVAR</a>
+                        </div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td><img class="calpe" src="../page 2 (trips)/css trips/Penon_Ifach.jpg">
+                            <div class="calp">
+                            <h3>CALPE</h3>
+                            <p class="subparrafo">Rutas programas para Julio</p>
+                            <a class="secondarybutton" href="../page 3 (contacto)/contacto.html">RESERVAR</a>
+                        </div>
+                   
+                        </td>
+                    </tr>
+                </table>
+          
+            </div>
+
+
+
+
+
+
+         </div>
+
+         <div class="containersection3"> <!--La sección tres es similar a la primera, divida e dos bloques, uno con imagenes y otro
+        con textos-->
+            <div class="terciarytext">
+                <h4>Elige tu ruta y empieza la aventura</h4>
+                <p class="seguridad"> 
+                    Nuestros profesionales del buceo y 
+                    de la exploración submarina te garantizarán una experiencia 100% segura 
+                    con una cobertura de seguros amplia que te harán lanzarte de lleno al mar.</p>
+    
+                <a  class="subutton" href="../page 3 (contacto)/contacto.html">APÚNTATE</a>
+            </div>
+    
+            <div class="subpicture"><img src="../page 2 (trips)/css trips/profesorbuceo.jpg"></div>
+            
+         </div>
+<!----------------------------------------------------Aquí va el footer----------------------------------------------->
+         <footer>
+
+            <p class="avisos">Aviso legal</p>
+            <p class="avisos">Politica de privacidad</p>
+            <p class="avisos">TheSirenitos.S.L</p>
+
+
+         </footer>
+
+
+
+
+       
+     <script src="js trips/trips.js"></script>
+</body>
+</html>

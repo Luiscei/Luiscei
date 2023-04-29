@@ -1,0 +1,1900 @@
+/*Vamos a importar una fuente de nuestra carpeta local*/
+@font-face{ font-family:Oswald;
+            src:url(../recursos/Oswald-Light.ttf);
+            font-style:light;}
+
+@font-face{ font-family:Oswald;src:url(../recursos/Oswald-Bold.ttf);font-style:bold;}
+    
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 500px) {
+
+
+
+
+body{margin:0;}
+
+
+
+    .container2{
+    width: 100%;
+    height: 4550px; /*Aquí le meto todo el largo de la página*/
+    position: absolute;
+    background-color:rgb(69, 112, 137);
+    overflow: hidden;}/*esta propiedad hace que todo lo que se salga del div se recorte*/
+
+
+   .mar{
+    width: 200px;
+    height: 200px;
+    min-width: 100%;
+    min-height: 100%;
+    top:0%; /*Esta propiedad es como un margin para posiciones absolutas o relativas*/
+    left:0%;
+    position:absolute; /*esta propiedad hace que el div no tome como posicion otros elementos que lo limitarian, dando más libertad para moverlo*/
+    object-fit: cover; /*Esta propiedad hace que la imagen se adapte cubriendo elñ espacio del div*/
+   }
+
+
+
+
+
+   header{
+    width: 100%; /*Aquí le digo que mi header ocupe todo el ancho de la página*/
+    
+    height: 5em;
+    display: flex;/*Aquí le digo que mi header que me agrupe los elementos en fila*/
+    z-index:100;/*Y con esta propiedad, que siempre esté superpuesto al contenido*/
+    position: relative;/*Y aquí que tome de referencia el contenedor anterior*/
+ }
+
+.logotipo{
+    width: 15%;
+    margin:10px;}
+
+
+
+
+    #menuescritorio{
+        display:none;}/*Esta propiedas es para que este menu no se muestre en móvil*/
+    
+    
+    
+    #hamburguesa{ /*Eso es un símbolo = que usaré como menú hamburguesa*/
+    
+        position: absolute;
+        top:3%; /*Esto es algo así como un margen para posiciones relativas y absolutas*/
+        right:3%;
+        background-color: transparent;
+        border-style: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Selecciono una familia tipográfica*/
+        font-weight:100;
+        font-size:50px;
+        color:rgb(0, 0, 0)
+    
+    
+    }
+    
+    
+    
+    
+    #menu{
+    background-color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    z-index: 100;
+    top:0%;
+    width:100%;
+    height: 50em;
+    color: black; /*color de la fuente*/
+
+    /*Las propiedades siguientes son para que me centre todo el contendio dentro de un div */
+    display: flex;
+    flex-direction: center; /*Con esta propiedad, le decimos que queremos todo centrado*/
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    display:none; /*con esta, que no queremos que se muestre*/
+    
+    
+    }
+    
+    
+    
+    
+    
+    #menu li{
+        margin-top:20px;
+        font-size: 20px;
+       
+        
+        
+        }
+        
+    
+    a{
+        text-decoration: none; /*Normalmente con los enlace, aparece un subrayado y color innecesario, que quitamos con esta propiedad*/
+        color: black;}
+    
+    ul{
+        list-style: none; /*Con esto, quitamos los elementos que enlistan una lista (nums, puntos etc...)*/
+        padding:0;}
+       
+    #cierre{
+    
+        position: absolute;
+        top:3%;
+        right:3%;
+        background-color: transparent;
+        border-style: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:100;
+        font-size: 40px;
+        color: rgb(177, 177, 177);}
+
+
+
+
+
+
+
+
+
+  /* SECCIÓN PRIMERA--------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+
+  */
+  
+  
+
+
+
+.containersection1{
+    width: 100%;
+    height: 700px;
+    
+    position: absolute;
+    top: 4%;
+    left: 0%; /* Con esto fijo a qué altura quiero que esté el menú (números menores, más arriba) *//*
+    left: 50%; /* Alinea el elemento al 50% del ancho del contenedor */
+    transform: translate(0%, 0%);
+    
+    
+    display:flex;/*De nuevo usamos estas propiedades para decirle que queremos el texto centrado en la parte superior de un eje vertical)*/
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.maintext{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+   
+
+    
+   } /*Con esto le digo al texto principal que se ponga a la izquierda*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+h1#descubre{
+
+    font-family:Poppins, sans-serif;
+    margin-left: 0%;
+    font-weight: 700; /*Aqui definimos el cuerpo de la tipografía*/
+    font-size: 60px;
+    line-height: 0px;/*Normalmente, cuando trabajamos con textos, hace unos espacios entre letras (interlineado) un poco desajustado, 
+    con esta propiedad, ajustamos el interlineado como queramos*/
+}
+
+
+h1.lacosta{
+
+    font-family:Poppins, sans-serif;
+    margin-left: 0%;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 0px;
+    
+ 
+
+
+}
+
+h1.ysussecretos{
+
+    font-family:Poppins, sans-serif;
+    margin-left: 0%;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0px;
+    
+}
+
+
+
+
+.botones{width: 100%;
+height: 250px;
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+#botonsecretos{
+
+
+    background-color:aliceblue;
+    border-style: none; /*Aquí definimos que no queremos que nuestro botón tenga bordes de ningún tipo*/
+    
+    
+   
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80%;
+     height: 100px;
+     margin-top: 80px;
+
+     
+}
+
+
+
+#botonsecretos2{
+
+
+
+    background-color:aliceblue;
+    border-style: none;
+    
+    
+   
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80%;
+     height: 100px;
+     margin-top: 20px;
+}
+
+
+#caja1blanca{
+
+width: 103%;
+height: 140em;
+background-color: white;
+position: absolute; 
+top:20%; 
+clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%); /*Esto te divide el cuadrado 
+en 4 vertices, de dos puntos, uno para el eje x y otro para el z*/ 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.what{
+font-family:Poppins, sans-serif;
+
+font-weight: 700;
+font-size: 5em;
+width: 80%;
+line-height:1em;
+
+background: linear-gradient(10deg,rgb(34, 41, 100), rgb(0, 213, 255)); 
+
+/*Aquí le metemos un clip, ya que desgraciadamente, no podemos usar la propiedad "color" para hacer un
+degradado en la tipografía*/
+
+/* degradado */
+-webkit-background-clip: text; /*Esta propiedad hace una "capa" de texto sobre un backgorund que he mencionado antes*/
+-webkit-text-fill-color: transparent; /*Y esta recorta ese background con nuestra mascara*/
+margin-bottom: 30px;
+margin-top: 50px;
+
+
+}
+
+ .prepárate{
+
+    font-family:Poppins, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: justify;
+    width: 80%;
+    margin-top: 0;
+    
+
+ }
+  
+
+
+/*--------------------------------------------------------------tabla----------------------------------------------------*/
+
+.tablamovil{display:block;}  /*Aquí le digo que me muestre el div para móvil y en la linea inferior le digo que me oculte ese div para 
+escritorio*/
+.tablaescritorio{display:none;}
+
+
+.tablamovil{
+    width:100%;
+    height:1300px ;
+    margin-top: 40px;}
+
+
+    table
+{
+width: 100%;
+height:1300px ;
+
+border-collapse: separate; /*Esto es para separar los diferentes td de la tabla*/
+border-spacing: 1em;
+
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+tr{width: 100%;
+height:400px;
+}
+
+td{
+height: 400px;
+width: 100%;
+overflow: hidden; /*Esta propiedad oculta todo lo que se salga del div*/
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.equipo{ 
+
+    object-fit:contain; /*esta propiedad encaja la imagen en un div*/
+    width:50%;
+    height: 80px;
+
+
+}
+
+
+.paisaje{ 
+    
+    object-fit:contain;
+    width:50%;
+    height: 80px;}
+
+.sucio{ 
+    
+    object-fit:contain;
+    width:50%;
+    height: 80px;
+}
+
+
+
+
+
+.equip{
+position: relative;
+width: 100%;
+text-align: center;
+top:11%;
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+h3{ font-family:Poppins, sans-serif;
+
+    font-size: 2em;
+    margin: 0;
+    line-height: 30px;
+    color: rgb(0, 0, 0);}
+
+.subparrafo{ font-family:Poppins, sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);}
+
+
+.secondarybutton{
+    width: 50%;
+    background-color: transparent;
+    height: 20%;
+    padding: 5%;
+    
+
+
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;}
+
+
+
+   .paisatge{
+    position: relative;
+width: 90%;
+text-align: center;
+top:11%;
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    
+    }          
+    
+    .brut{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top:11%;
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        }                   
+    
+
+
+        
+
+
+
+            /*-------------Aqui empieza la seccion nueva---------------------------------------------------------*/
+
+            .containersection4{
+                width: 100%;
+                height:1100px;
+                display:flex;
+                flex-direction: column;
+                background-color: white;
+                
+                align-items: center;
+                position: relative;
+                margin-top:185em;
+            
+              }
+            
+               .terciarytext{width: 80%;
+                height: 500px;
+                background-color:rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 3%;}
+            
+            
+                .subpicture img{
+                    margin-top: 4em;
+                    width: 100%;
+                     height:500px;
+                    object-fit:cover;
+                   }
+            
+            
+                   h4{ font-family:Poppins, sans-serif;
+                    font-size: 2em;
+                    line-height: 40px;
+                    margin: 0;
+                    text-align: center;}
+                
+                 .masinfo{ font-family:Poppins, sans-serif;
+                        width: 100%;
+                        font-size: 1.2em;
+                        line-height: 30px;
+                        font-weight: 400;
+                        margin-top: 2em;
+                        text-align: center;}
+            
+                .subutton{
+                    margin-top:2em;
+                    width: 50%;
+                    background-color: transparent;
+                    height: 20%;
+                    padding: 5%;
+                    
+                
+                
+                    border-style: solid;
+                    border-color: rgb(0, 0, 0);
+                    color: rgb(0, 0, 0);
+                    font-family: Poppins, sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                
+                    display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                                   }
+
+        /*----------------------------------------------------------footer-----------------------------------*/
+            
+        footer{
+            position: absolute;
+            
+            width: 100%;
+            height: 400px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:2%
+            
+         }
+        
+        .avisos{font-family:Poppins, sans-serif;
+            
+            color: white;
+            font-size: 1.2em;
+            line-height: 30px;
+            font-weight: 300;
+            margin-top: 2em;
+            text-align: center;
+        }
+        
+
+
+
+
+
+ 
+             
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––Estilos para escritorio–––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+        
+
+ @media only screen and (min-width:490px) and (max-width: 2200px) {
+
+
+
+
+
+
+    .body{margin:0}
+
+
+    .container2{
+        width: 100%;
+        height: 2660px;
+        position: absolute;
+        background-color:rgb(69, 112, 137);
+        overflow: hidden;
+        
+       }
+        /*esta propiedad hace que todo lo que se salga del div se recorte*/
+    
+       /*IMAGEN PRINCIPAL*/
+        .container2 .mar{
+        width: 1800px;
+        height: 900px;
+        min-width: 100%;
+        min-height: 100%;
+        top:0%;
+        left:0%;
+        position:absolute;
+        object-fit: cover; 
+       }
+    
+    /*header*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+    body{margin:0;}
+    
+    header{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        top:0%}
+    
+    
+    .logo{
+    
+    width:20%;
+    margin-left:1%;}
+    
+    .logotipo{
+        width: 15%;
+        margin:10px;
+    }
+    
+    .separadormenu{width:50%;}
+    
+    /*con las siguientes propiedades css voy a decirle al código 
+    que me oculte el menú móvil cuando está en versión de escritorio*/
+
+    #hamburguesa{display: none;}
+    #menu{display:none;}
+    #cierre{display:none;}
+
+    /*aquí acabo, y le digo que ahora al código que me muestre el menú de escritorio
+    con la propiedad disppay:block;*/
+
+    #menuescritorio{
+        display:block;}
+    
+    #menuescritorio ul{
+            display:flex;
+            color: rgb(0, 0, 0)!important;
+            font-family: "Poppins", sans-serif;
+            list-style:none;
+        }
+
+            
+    
+        #menuescritorio li{
+               padding-left: 20%;
+               color: rgb(0, 0, 0);
+        }
+    
+    a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);}
+    
+    a:hover{
+        text-decoration: none;
+        color: rgb(255, 255, 255);}
+    
+    
+    
+    
+    /*SECCION 1*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+    
+    
+    
+        
+      /* SECCIÓN PRIMERA--------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+    
+      */
+      
+      
+    
+    
+    
+    .containersection1{
+        width: 100%;
+        height: 1500px;
+        
+        position: relative;
+        top: 7%;
+        left: 10%; /* Con esto fijo a qué altura quiero que esté el menú (números menores, más arriba) *//*
+        left: 50%; /* Alinea el elemento al 50% del ancho del contenedor */
+        transform: translate(0%, 0%);
+        display: flex;
+        flex-direction: column;
+        align-items:start; /*Con esto le digo que quiero los items en el eje horizontal a la izquierda*/
+
+       }
+    
+    
+       .maintext{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;} /*Con esto le digo al texto principal que se ponga a la izquierda*/
+
+
+       h1{
+    
+        margin-top: 0px;
+        margin-bottom: 0px; /* muy importante aplicar estos dos cuando trabajes con H1,h2... y no quieras
+        interlineados molestos. */
+        color: linear-gradient(10deg,rgb(34, 41, 100), rgb(0, 213, 255));}
+    
+    
+    
+    h1#descubre{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-style: 700;
+        font-size:120px;
+        line-height: 0px;
+    }
+    
+    
+    h1.lacosta{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 0px;
+        margin-top: 110px;
+     
+    
+    
+    }
+    
+    h1.ysussecretos{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size:120px;
+        line-height: 0px;
+        margin-top: 110px;}
+
+
+
+    .botones{
+        margin-top: 5em;
+        margin-left: 0px;
+        width: 70%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+        left:0%;
+        gap: 2%;
+    }
+    
+    
+    #botonsecretos{
+    
+    
+        background-color:aliceblue;
+        border-style: none;
+        
+        
+       
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 0%;
+        margin-top: 0px;
+        width: 30%;
+        height: 80px;
+         
+    }
+    
+    #botonsecretos:hover{
+    
+    
+        background-color:rgb(0, 0, 0);
+      color: white;
+    }
+    
+    
+    
+    #botonsecretos2{
+        background-color:aliceblue;
+        border-style: none;
+        
+        
+        color: rgb(18, 21, 39); 
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 0%;
+        margin-top: 0px;
+        width: 30%;
+        height: 80px;
+    }
+    
+    
+    #botonsecretos2:hover{
+    
+    
+        background-color:rgb(0, 0, 0);
+      color: white;
+    }
+    
+
+    
+    
+    #caja1blanca{
+    
+    width: 103%;
+    height: 1000px;
+    background-color: white;
+    position: absolute;
+    top:40%; 
+    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%); /*Esto te divide el cuadrado 
+    en 4 vertices, de dos puntos, uno para el eje x y otro para el z*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    }
+    
+    .what{
+    font-family:Poppins, sans-serif;
+ 
+    
+    font-weight: 700;
+    font-size: 5em;
+    width: 80%;
+    line-height:1.3em;
+    
+    background: linear-gradient(10deg,rgb(34, 41, 100), rgb(0, 213, 255));
+    
+    /* degradado */  /* La siguiente propiedad lo que hace es generar un degradado en las letras a partir de una máscara*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    margin-top: 3em;
+    
+    
+    }
+    
+     .prepárate{
+    
+        font-family:Poppins, sans-serif;
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 1em;
+        text-align: justify;
+        width: 80%;
+        margin-top: 0;
+        
+    
+     }
+     
+     
+.tablamovil{display:none;}
+
+
+.tablaescritorio{
+    display:block;
+    width:100%;
+    height:400px ;}
+    
+    table
+    {margin-top: 100px;
+        width: 100%;
+        height:300px ;
+    
+        border-collapse: separate; /*esto separa los diferentes rows de una tabla*/
+        border-spacing: 4em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    
+    tr{width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+    
+    td{
+        height: 300px;
+        width: 15em;
+       
+        margin-left: 30px;
+        margin-right: 30px;
+     
+        }
+    
+
+    td.inicio{display: flex;
+        flex-direction: column;
+        align-items: center; }
+
+    .equipo{ 
+        
+       
+        width:20%;
+        height: 50px;
+        margin-bottom: 20px;
+      
+    
+    }
+    
+td.medio{display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    .paisaje{ 
+        
+        width:20%;
+        height: 50px;
+        margin-bottom: 20px;
+      
+    }
+    
+    td.final{display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+    
+    .sucio{ 
+        
+        width:20%;
+        height: 50px;
+        margin-bottom: 20px;
+    
+    }
+    
+
+    
+    
+    .equip{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top:0%;
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    h3{ font-family:Poppins, sans-serif;
+        
+        font-size: 1.4em;
+        margin: 0;
+        line-height: 30px;
+        color: rgb(0, 0, 0);}
+    
+    .subparrafo{ font-family:Poppins, sans-serif;
+        font-size: 0.8em;
+        line-height: 25px;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(0, 0, 0);}
+    
+    
+       
+    
+    
+       .paisatge{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top:0%;
+     
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        }          
+        
+        .brut{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            top:0%;
+           
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            }                   
+        
+
+
+
+            /*-------------Aqui empieza la seccion nueva---------------------------------------------------------*/
+
+.containersection4{
+    margin-top: 35em;
+    
+
+    width: 100%;
+    height:500px;
+    display:flex;
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: white;;
+
+  }
+
+   .terciarytext{width: 60%;
+    height: 500px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;}
+
+
+    .subpicture img{
+        width: 100%;
+         height:500px;
+        object-fit:cover;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%); 
+       
+       }
+
+
+       h4{ font-family:Poppins, sans-serif;
+        font-size: 2em;
+        line-height: 40px;
+        margin: 0;
+        text-align: left;}
+    
+     .masinfo{ font-family:Poppins, sans-serif;
+            width: 90%;
+            font-size: 1em;
+            line-height: 30px;
+            font-weight: 400;
+            margin-top: 1.5em;
+            text-align: left;}
+
+    .subutton{
+        margin-top: 0.8em;
+        width: 50%;
+        background-color: transparent;
+        height: 15%;
+      
+
+
+        border-style: solid;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+                       }
+    
+
+       .subutton:hover{
+         
+        background-color: rgb(22, 136, 156);
+        border-style: solid;
+        transition:  0.3s ; 
+        color: rgb(255, 255, 255)!important;
+        font-size: 25px;
+ }                    
+
+        
+            
+            footer{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                z-index: 100;
+                margin-top: 0em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap:3%
+                
+             }
+            
+            .avisos{font-family:Poppins, sans-serif;
+                
+                color: white;
+                font-size: 1em;
+                line-height: 30px;
+                font-weight: 200;
+                margin-top: 2em;
+                text-align: center;
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* medidas para tableta--------------------------------------------------------------------*/
+
+
+
+
+@media only screen and (min-width:490px) and (max-width: 770px) {
+
+
+
+
+
+
+    .body{margin:0}
+
+
+    .container2{
+        width: 100%;
+        height: 2290px;
+        position: absolute;
+        background-color:rgb(69, 112, 137);
+        overflow: hidden;
+        
+       }
+        /*esta propiedad hace que todo lo que se salga del div se recorte*/
+    
+       /*IMAGEN PRINCIPAL*/
+        .container2 .mar{
+        width: 1800px;
+        height: 900px;
+        min-width: 100%;
+        min-height: 100%;
+        top:0%;
+        left:0%;
+        position:absolute;
+        object-fit: cover; 
+       }
+    
+    /*header*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+
+
+    body{margin:0;}
+    
+    header{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        top:0%}
+    
+    
+    .logo{
+    
+    width:20%;
+    margin-left:1%;}
+    
+    .logotipo{
+        width: 15%;
+        margin:10px;
+    }
+    
+    .separadormenu{width:5%;}
+    
+    /*con las siguientes propiedades css voy a decirle al código 
+    que me oculte el menú móvil cuando está en versión de escritorio*/
+
+    #hamburguesa{display: none;}
+    #menu{display:none;}
+    #cierre{display:none;}
+
+    /*aquí acabo, y le digo que ahora al código que me muestre el menú de escritorio
+    con la propiedad disppay:block;*/
+
+    #menuescritorio{
+        display:block;}
+    
+    #menuescritorio ul{
+            display:flex;
+            color: rgb(0, 0, 0)!important;
+            font-family: "Poppins", sans-serif;
+            list-style:none;
+        }
+
+            
+    
+        #menuescritorio li{
+               padding-left: 20%;
+               color: rgb(0, 0, 0);
+        }
+    
+
+
+    a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);}
+    
+    
+        a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);}
+    
+    
+    
+    
+    /*SECCION 1*ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+    
+    
+    
+        
+      /* SECCIÓN PRIMERA--------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------------------------
+    
+      */
+      
+      
+    
+    
+    
+    .containersection1{
+        width: 100%;
+        height: 1000px;
+        
+        position: relative;
+        top: 7%;
+        left: 10%; /* Con esto fijo a qué altura quiero que esté el menú (números menores, más arriba) *//*
+        left: 50%; /* Alinea el elemento al 50% del ancho del contenedor */
+        transform: translate(0%, 0%);
+        display: flex;
+        flex-direction: column;
+        align-items:start; /*Con esto le digo que quiero los items en el eje horizontal a la izquierda*/
+
+       }
+    
+    
+       .maintext{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;} /*Con esto le digo al texto principal que se ponga a la izquierda*/
+
+
+       h1{
+    
+        margin-top: 0px;
+        margin-bottom: 0px; /* muy importante aplicar estos dos cuando trabajes con H1,h2... y no quieras
+        interlineados molestos. */
+        color: linear-gradient(10deg,rgb(34, 41, 100), rgb(0, 213, 255));}
+    
+    
+    
+    h1#descubre{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-style: 700;
+        font-size:80px;
+        line-height: 0px;
+    }
+    
+    
+    h1.lacosta{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 0px;
+        margin-top: 80px;
+     
+    
+    
+    }
+    
+    h1.ysussecretos{
+    
+        font-family:Poppins, sans-serif;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size:80px;
+        line-height: 0px;
+        margin-top: 80px;}
+
+
+
+    .botones{
+        margin-top: 5em;
+        margin-left: 0px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+        left:0%;
+        gap: 2%;
+    }
+    
+    
+    #botonsecretos{
+    
+    
+        background-color:aliceblue;
+        border-style: none;
+        
+        
+       
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 0%;
+        margin-top: 0px;
+        width: 30%;
+        height: 80px;
+         
+    }
+    
+    #botonsecretos:hover{
+    
+    
+        background-color:rgb(0, 0, 0);
+      color: white;
+    }
+    
+    
+    
+    #botonsecretos2{
+        background-color:aliceblue;
+        border-style: none;
+        
+        
+        color: rgb(18, 21, 39); 
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 0%;
+        margin-top: 0px;
+        width: 30%;
+        height: 80px;
+    }
+    
+    
+    #botonsecretos2:hover{
+    
+    
+        background-color:rgb(0, 0, 0);
+      color: white;
+    }
+    
+
+    
+    
+    #caja1blanca{
+    
+    width: 103%;
+    height: 1500px;
+    background-color: white;
+    position: absolute;
+    top:20%; 
+    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%); /*Esto te divide el cuadrado 
+    en 4 vertices, de dos puntos, uno para el eje x y otro para el z*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    }
+    
+    .what{
+    font-family:Poppins, sans-serif;
+ 
+    
+    font-weight: 700;
+    font-size: 5em;
+    width: 80%;
+    line-height:1.3em;
+    
+    background: linear-gradient(10deg,rgb(34, 41, 100), rgb(0, 213, 255));
+    
+    /* degradado */  /* La siguiente propiedad lo que hace es generar un degradado en las letras a partir de una máscara*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    margin-top: 3em;
+    
+    
+    }
+    
+     .prepárate{
+    
+        font-family:Poppins, sans-serif;
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 1em;
+        text-align: justify;
+        width: 80%;
+        margin-top: 0;
+        
+    
+     }
+     
+     
+.tablamovil{display:none;}
+
+
+.tablaescritorio{
+    display:block;
+    width:100%;
+    height:400px ;}
+    
+    table
+    {margin-top: 100px;
+        width: 100%;
+        height:300px ;
+    
+        border-collapse: separate; /*esto separa los diferentes rows de una tabla*/
+        border-spacing: 4em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    
+    tr{width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+    
+    td{
+        height: 300px;
+        width: 10em;
+       
+        margin-left: 10px;
+        margin-right: 10px;
+     
+        }
+    
+
+    td.inicio{display: flex;
+        flex-direction: column;
+        align-items: center; }
+
+    .equipo{ 
+        
+       
+        width:20%;
+        height: 40px;
+        margin-bottom: 20px;
+      
+    
+    }
+    
+td.medio{display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    .paisaje{ 
+        
+        width:20%;
+        height: 40px;
+        margin-bottom: 20px;
+      
+    }
+    
+    td.final{display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+    
+    .sucio{ 
+        
+        width:20%;
+        height: 40px;
+        margin-bottom: 20px;
+    
+    }
+    
+
+    
+    
+    .equip{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top:0%;
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    h3{ font-family:Poppins, sans-serif;
+        
+        font-size: 1.4em;
+        margin: 0;
+        line-height: 30px;
+        color: rgb(0, 0, 0);}
+    
+    .subparrafo{ font-family:Poppins, sans-serif;
+        font-size: 0.8em;
+        line-height: 25px;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(0, 0, 0);}
+    
+    
+       
+    
+    
+       .paisatge{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top:0%;
+     
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        }          
+        
+        .brut{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            top:0%;
+           
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            }                   
+        
+
+
+
+            /*-------------Aqui empieza la seccion nueva---------------------------------------------------------*/
+
+.containersection4{
+    margin-top: 43em;
+    
+
+    width: 100%;
+    height:500px;
+    display:flex;
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: white;;
+
+  }
+
+   .terciarytext{width: 100%;
+    height: 500px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;}
+
+
+    .subpicture img{
+        width: 80%;
+         height:500px;
+        object-fit:cover;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%); 
+       
+       }
+
+
+       h4{ font-family:Poppins, sans-serif;
+        font-size: 1.5em;
+        line-height: 40px;
+        margin: 0;
+        text-align: left;}
+    
+     .masinfo{ font-family:Poppins, sans-serif;
+            width: 90%;
+            font-size: 0.8em;
+            line-height: 30px;
+            font-weight: 400;
+            margin-top: 1.3em;
+            text-align: left;}
+
+    .subutton{
+        margin-top: 0.8em;
+        width: 50%;
+        background-color: transparent;
+        height: 15%;
+      
+
+
+        border-style: solid;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+                       }
+    
+
+       .subutton:hover{
+         
+        background-color: rgb(22, 136, 156);
+        border-style: solid;
+        transition:  0.3s ; 
+        color: rgb(255, 255, 255)!important;
+        font-size: 20px;
+      
+ }                    
+
+        
+            
+            footer{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                z-index: 100;
+                margin-top: 0em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap:3%
+                
+             }
+            
+            .avisos{font-family:Poppins, sans-serif;
+                
+                color: white;
+                font-size: 1em;
+                line-height: 30px;
+                font-weight: 200;
+                margin-top: 2em;
+                text-align: center;
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

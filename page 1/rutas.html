@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="css rutas/rutas.css" type="text/css" rel="stylesheet"><!-------------Aqui lo enlazo con su CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--aquí llamo a la fuente Poppins para la web-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>  <!--Aquí va el título de mi página-->
+</head>
+<body>
+    
+
+
+    
+
+     <!--Creo un contenedor general que integre todosd los elementos al que llamaré container2 (el body sera el 1)-->
+    <div class="container2"><img src="../recursos/tiro-nivel-superficie-agua-rocas-arrecifes-mar-dia-soleado.jpg" class="mar"> <!--Toda mi web tendrá un backround 
+    defondo que será una costa marina con rocas-->
+        <!--Ahora crearé un header que será el mismo en todas las páginas de la web con un logo y un menú de navegación-->
+        <header>
+            <div class ="logo"> <!--el logo será un casco de buzo antiguo en negro-->
+                <img class="logotipo" src="../recursos/diving-helmet.png">
+            </div>
+                <div class="separadormenu"></div> <!--Este elemento es un separador, le daré un width de 50% en CSS para que me separe el
+                logo del menú principal-->
+                    <button id="hamburguesa">=</button> <!--este boton se mostrará en versión móvil mediante un mediaQuery en el CSS-->
+                    <nav id="menuescritorio"> <!--este menú solo se mostrará en la versión de escritorio-->
+                        <ul>
+                                 <li><a href="../page 1/rutas.html">Home</a></li>
+                                 <li><a href="../page 2 (trips)/trips.html">Rutas</a></li>
+                                 <li><a href="../page 3 (contacto)/contacto.html">Contacto</a></li>
+                         </ul>
+                    </nav>
+
+            <nav id="menu"> <!--este menú se mostrará solo en versión de móvil-->
+                <button id="cierre">x</button> 
+                <ul>
+                  <li><a href="../page 1/rutas.html">Home</a></li>
+                  <li><a href="../page 2 (trips)/trips.html">Rutas</a></li>
+                  <li><a href="../page 3 (contacto)/contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
+        
+        </header>
+  
+        <!---------------------------------------------------Aquí empieza la primera sección--------------------------------->
+
+
+        <div class="containersection1"> <!--Esta primera sección tendrá unn texto principal que habré dividio en tres bloques para darle
+        mejores efectos, y dos botones (call to action)-->
+
+            <div class="maintext">
+                <h1 id="descubre">  Descubre</h1>
+                <h1 class="lacosta">la costa y</h1>
+                <h1 class="ysussecretos">sus secretos</h1>
+            </div>
+            <div class="botones">
+               <button id="botonsecretos">RESERVA TU PLAZA</button>
+                <button id="botonsecretos2">QUIERO APRENDER</button>
+            </div>
+
+         </div>
+         
+
+         <!-------------------------------------------------Aquí empieza la sección 2 ------------------------------------------->
+         <!--Esta sección constará de un título, un párrafo y una tabla co algunos iconos y descripciones-->
+
+<div class="containersection2">
+        <div id="caja1blanca">
+            <h2 class="what"> What are you waiting for?</h2>
+            <p class="prepárate"> Si eres de esos que cuando has hecho una excursión a la playa
+                cuando hacía buen tiempo te han entrado una ganas increíbles de bucear en las aguas
+                turquesas y ver el fondo submarino, este es tu sitio. Olvídate, eso sí, de chapoteo
+                con la máscara de Decathlon. Aquí aprenderás las técnicas más avanzadas de inmersión, 
+                tanto en apnea como en submarinismo, para que el mar no se quede secretos para ti.
+            </p>
+
+
+            <!--Aquí viene una tabla---------------------->
+
+
+            <div class="tablaescritorio"> <!--Aquí he hecho una tabla <table> dentro de un div que se mostrará en escritorio y tablet, em versión
+                móvil se mostrará otrav tabla de estructura diferente adaptada amóvil-->
+            <table>
+                <tr> <!--esto es una fila (tr) que contará con tres columnas (td) cada una con una imagen, un título y un texto-->
+                    <td class="inicio"><img class="equipo" src="../page 1/css rutas/buceo (1).png">
+                        <div class="equip">
+                        <h3>Al agua</h3>
+                        <p class="subparrafo">No necesitas equipo, tan solo unas gafas y un tubo de snorkel para pasarlo en grande</p>
+                        
+                    </div>
+                    </td>
+
+                    <td class="medio"><img class="paisaje" src="../page 1/css rutas/playa.png">
+                        <div class="paisatge">
+                        <h3>Alucina</h3>
+                        <p class="subparrafo">Ofrecemos varias rutas en lugares icónicos de la Marina Alta ¿Te atreves a descubrirlos?</p>
+                       
+                    </div>
+                    </td>
+                    <td class="final"><img class="sucio" src="../page 1/css rutas/botella.png">
+                        <div class="brut">
+                        <h3>Actúa</h3>
+                        <p class="subparrafo">Con nosotros, no solo te divertirás, sino que también nos ayudarán a limpiar el mar de basura</p>
+                        
+                    </div>
+
+                    </td>
+                </tr>
+            </table>
+      
+        </div>
+
+
+
+
+        <div class="tablamovil"> <!--este div solo se mostrará en móvil-->
+
+            <table> <!--Esta tabla no es un <tr> y tres columnas, sino tres <tr> con una columna cada uno, para que así se vea en vertical en el móvil-->
+                <tr>
+                    <td><img class="equipo" src="../page 1/css rutas/buceo (1).png">
+                        <div class="equip">
+                        <h3>Al agua</h3>
+                        <p class="subparrafo">No necesitas equipo, tan solo unas gafas y un tubo de snorkel para pasarlo en grande</p>
+                        <a class="secondarybutton" href=""> RESERVAR</a>
+                    </div>
+                    </td>
+                </tr>
+            <tr> 
+                <td><img class="paisaje" src="../page 1/css rutas/playa.png">
+                    <div class="paisatge">
+                    <h3>Alucina</h3>
+                    <p class="subparrafo">Ofrecemos varias rutas en lugares icónicos de la Marina Alta ¿Te atreves a descubrirlos?</p>
+                    <a class="secondarybutton" href="">RESERVAR</a>
+                    </div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td><img class="sucio" src="../page 1/css rutas/botella.png">
+                        <div class="brut">
+                        <h3>Actúa</h3>
+                        <p class="subparrafo">Con nosotros, no solo te divertirás, sino que también nos ayudarán a limpiar el mar de basura</p>
+                        <a class="secondarybutton" href="">RESERVAR</a>
+                    </div>
+               
+                    </td>
+                </tr>
+            </table>
+      
+        </div>
+
+
+              
+</div>
+
+
+
+ <!-------------------------------------------Aquí empieza la sección 3-------------------------------------------->
+
+<!--Esta sección constará de dos bloques, uno que será una imagen y otro que será un título, un texto y un botón-->
+
+<div class="containersection4">
+    <div class="terciarytext">
+        <h4>Somos expertos en la Costa Blanca</h4>
+        <p class="masinfo"> 
+        Desde hace muchos años, hemos explorado con gente como tú cada cueva, cada rincón, cada gruta submarina. Y no nos arrepentimos de
+        nada, ¿nuestro objetivo? Que conozcas el mar como nunca lo has hecho</p>
+
+        <a  class="subutton" href="../page 3 (contacto)/contacto.html">APÚNTATE</a>
+    </div>
+
+    <div class="subpicture"><img src="../page 1/css rutas/javea-750x399.jpg"></div>
+    
+ </div>
+
+
+<!--------------------------------------------Aquí va el footer con los elementos obligados de la web----------------------------------------------->
+
+
+</div>
+
+
+<footer>
+
+    <p class="avisos">Aviso legal</p>
+    <p class="avisos">Politica de privacidad</p>
+    <p class="avisos">TheSirenitos.S.L</p>
+
+
+ </footer>
+
+
+
+
+
+
+ 
+<!---A continuación lo enlazo a mi archivo de JavaScript para que haga las interacciones con el móvil-->
+
+     <script src="js rutas/rutas.js"></script>
+</body>
+</html>
